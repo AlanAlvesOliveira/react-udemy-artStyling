@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import classes from "./AuthInput.module.css";
 
 export default function AuthInputs() {
   const [enteredEmail, setEnteredEmail] = useState('');
@@ -24,7 +25,7 @@ export default function AuthInputs() {
     <div id="auth-inputs">
       <div className="controls">
         <p>
-          <label>Email</label>
+          <label className={emailNotValid ? classes.invalidField : ''}>Email</label>
           <input
             type="email"
             className={emailNotValid ? 'invalid' : undefined}
