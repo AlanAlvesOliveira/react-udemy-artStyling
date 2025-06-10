@@ -19,7 +19,7 @@ export default function Header() {
       <img src={logo} alt="A canvas" />
       <TituloComponentStyled>ReactArt</TituloComponentStyled>
       {/* <h1>ReactArt</h1> */}
-      <p>A community of artists and art-lovers.</p>
+      <p className='uppercase'> A community of artists and art-lovers.</p>
     </header>
   );
 }
